@@ -100,7 +100,7 @@ async function search(wordsArr) {
         }
     }
     return new Promise((resolve, reject) => {
-        resolve(true);
+        resolve(solution);
     })
 }
 
