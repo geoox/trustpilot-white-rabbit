@@ -1,0 +1,23 @@
+{
+  "name": "trustpilot-white-rabbit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geoox/trustpilot-white-rabbit.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/geoox/trustpilot-white-rabbit/issues"
+  },
+  "homepage": "https://github.com/geoox/trustpilot-white-rabbit#readme",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "md5": "^2.3.0"
+  }
+}
