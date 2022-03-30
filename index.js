@@ -76,26 +76,22 @@ async function search(wordsArr) {
     // brute force
     var solution = [];
     for (i = 0; i < wordsArr.length; i++) {
-        console.log('processing word '+wordsArr[i]);
         for (var j = 0; j < wordsArr.length; j++) {
-            var word1 = wordsArr[i].split("").sort().join("");
-            var word2 = wordsArr[j].split("").sort().join("");
+            // var word1 = wordsArr[i].split("").sort().join("");
+            // var word2 = wordsArr[j].split("").sort().join("");
             // if((word1+word2).length > SORTED_PHRASE.length) j=wordsArr.length;
             for (var k = 0; k < wordsArr.length; k++) {
                 var word1 = wordsArr[i];
                 var word2 = wordsArr[j];
                 var word3 = wordsArr[k];
                 var candidate = word1+' '+word2+' '+word3;
-                if(candidate.length != SORTED_PHRASE.length){
-                    k++;
-                } else {
+                if(candidate.length === SORTED_PHRASE.length){
                     var candidateMD5 = md5(candidate);
                     if(MD5ARR.includes(candidateMD5)){
                         console.log('CANDIDATE FOUND: ' + candidate +' @ '+new Date().toISOString());
                         solution.push(candidate);
                     }
                 }
-                
             }
         }
     }
