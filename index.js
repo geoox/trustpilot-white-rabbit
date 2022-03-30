@@ -77,9 +77,6 @@ async function search(wordsArr) {
     var solution = [];
     for (i = 0; i < wordsArr.length; i++) {
         for (var j = 0; j < wordsArr.length; j++) {
-            // var word1 = wordsArr[i].split("").sort().join("");
-            // var word2 = wordsArr[j].split("").sort().join("");
-            // if((word1+word2).length > SORTED_PHRASE.length) j=wordsArr.length;
             for (var k = 0; k < wordsArr.length; k++) {
                 var word1 = wordsArr[i];
                 var word2 = wordsArr[j];
