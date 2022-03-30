@@ -56,7 +56,7 @@ function compareCharObjs(objMother, objChild) {
 }
 
 async function filterWordsStep2(wordsArr) {
-    // filter out words which contain characters that are not part of init phrase
+    // filter out words which contain more characters than those in init phrase
     var initPhraseObj = await countPhraseChars('poultry outwits ants');
 
     var filteredArr = [];
@@ -109,8 +109,6 @@ async function main() {
 
     var solution = await search(secondFilter);
     console.log('Solution', solution);
-    // now make all combinations for phrases with 3 words in given anagram, hash them & compare the hashes
-
 }
 
 main();
